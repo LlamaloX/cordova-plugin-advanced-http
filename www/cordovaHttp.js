@@ -177,7 +177,7 @@ if (typeof angular !== 'undefined') {
                  return http.setHeader(header, value);
              },
              setDataSerializer: function (serializer) {
-                 return http.setParamSerializer(serializer);
+                 return http.setDataSerializer(serializer);
              },
              enableSSLPinning: function (enable) {
                  return makePromise(http.enableSSLPinning, [enable]);
